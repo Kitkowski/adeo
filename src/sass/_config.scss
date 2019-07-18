@@ -1,0 +1,48 @@
+/* 
+vars
+*/
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #D7D7D7;
+$darkGrey: #333;
+$red: #FC5156;
+$green: #7EC377;
+$blue: #448CCB;
+$lightBlue: #56B8F1;
+
+/*
+mixins
+*/
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform:translateY($e);
+  transform:translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition:$e;
+  -moz-transition:$e;
+  transition:$e;
+}
+
+/* 
+Fonts - 
+*/
+
+body{
+  background:$white;
+  // font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:10px;
+  color: $black;
+  font-weight:500;
+  font-style:normal;
+  @media(max-width:900) {
+    font-size:7px!important;
+  }
+}
+a {
+  text-decoration:none;
+  cursor:pointer;
+}

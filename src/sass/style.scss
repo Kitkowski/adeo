@@ -1,0 +1,35 @@
+@import "_config.scss";
+@import "_header.scss";
+@import "_banner.scss";
+@import "_list.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+.adeo {
+  background-color:$white;
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  height:100%;
+  @media(max-width:1024px){
+    height:100%;
+  }
+
+}
+.container {
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 200px;
+  margin-left: 200px;
+  @media(max-width:900px) {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  @media(max-width:600px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media(max-width:370px) {
+    width: 100%!important;
+  }
+}
